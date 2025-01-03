@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/CyntaxPC/SCPcraft-Recrafted-1.21.4.git"
 	},
 	"license": "MIT",
 	"icon": "assets/scprecrafted/icon.png",
