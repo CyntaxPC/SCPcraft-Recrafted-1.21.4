@@ -1,5 +1,6 @@
 package net.cyntax.scprecrafted;
 
+import net.cyntax.scprecrafted.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,7 +12,6 @@ public class SCPcraftRecrafted implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
+		ModItems.registerModItems();
 	}
 }

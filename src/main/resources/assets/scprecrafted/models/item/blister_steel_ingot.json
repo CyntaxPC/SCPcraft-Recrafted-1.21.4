@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "texture": {
+    "layer0": "scprecrafted:item/blister_steel_ingot"
+  }
+}
