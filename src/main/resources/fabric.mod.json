@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "scprecrafted",
+	"version": "${version}",
+	"name": "SCPcraft Recrafted",
+	"description": "This mod aim to recreate and expand on the SCPcraft mod made popular in 2012.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/scprecrafted/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cyntax.scprecrafted.SCPcraftRecrafted"
+		],
+		"fabric-datagen": [
+			"net.cyntax.scprecrafted.SCPcraftRecraftedDataGenerator"
+		],
+		"client": [
+			"net.cyntax.scprecrafted.SCPcraftRecraftedClient"
+		]
+	},
+	"mixins": [
+		"scprecrafted.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
