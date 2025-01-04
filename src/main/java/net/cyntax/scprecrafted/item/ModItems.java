@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item BLISTER_STEEL_INGOT=registerItem("blister_steel_ingot",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SCPcraftRecrafted.MOD_ID,"blister_steel_ingot")))));
+    public static final Item IRON_BLAST=registerItem("iron_blast",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SCPcraftRecrafted.MOD_ID,"iron_blast")))));
 
 
 
@@ -30,6 +31,7 @@ public class ModItems {
         SCPcraftRecrafted.LOGGER.info("Registering modded items for " + SCPcraftRecrafted.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries ->{
             fabricItemGroupEntries.add(BLISTER_STEEL_INGOT);
+            fabricItemGroupEntries.add(IRON_BLAST);
         } );
     }
 }
