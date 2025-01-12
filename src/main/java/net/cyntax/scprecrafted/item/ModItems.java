@@ -13,6 +13,10 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item BLISTER_STEEL_INGOT=registerItem("blister_steel_ingot",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SCPcraftRecrafted.MOD_ID,"blister_steel_ingot")))));
     public static final Item IRON_BLAST=registerItem("iron_blast",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SCPcraftRecrafted.MOD_ID,"iron_blast")))));
+    public static final Item RAW_PLATINUM=registerItem("raw_platinum",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SCPcraftRecrafted.MOD_ID,"raw_platinum")))));
+    public static final Item PLATINUM_INGOT=registerItem("platinum_ingot",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SCPcraftRecrafted.MOD_ID,"platinum_ingot")))));
+    public static final Item RAW_IRIDIUM=registerItem("raw_iridium",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SCPcraftRecrafted.MOD_ID,"raw_iridium")))));
+    public static final Item IRIDIUM_INGOT=registerItem("iridium_ingot",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SCPcraftRecrafted.MOD_ID,"iridium_ingot")))));
 
 
 
@@ -29,9 +33,5 @@ public class ModItems {
 
     public static void registerModItems() {
         SCPcraftRecrafted.LOGGER.info("Registering modded items for " + SCPcraftRecrafted.MOD_ID);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries ->{
-            fabricItemGroupEntries.add(BLISTER_STEEL_INGOT);
-            fabricItemGroupEntries.add(IRON_BLAST);
-        } );
     }
 }

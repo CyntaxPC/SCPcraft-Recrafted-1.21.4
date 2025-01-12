@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "scprecrafted",
 	"version": "${version}",
-	"name": "SCPcraft Recrafted",
+	"name": "SCPcraft: Recrafted",
 	"description": "This mod aim to recreate and expand on the SCPcraft mod made popular in 2012.",
 	"authors": [
 		"Me!"
