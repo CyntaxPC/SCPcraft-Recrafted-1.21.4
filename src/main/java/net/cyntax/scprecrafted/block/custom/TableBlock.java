@@ -28,7 +28,7 @@ public class TableBlock extends HorizontalFacingBlock {
                     Block.createCuboidShape(14.0, 13.0, 1.0, 15.0, 15.0, 15.0),
                     Block.createCuboidShape(1.0, 13.0, 14.0, 15.0, 14.0, 15.0),
                     Block.createCuboidShape(0.0, 14.0, 0.0, 16.0, 16.0, 16.0))
-            .reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
+            .reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     public TableBlock(Settings settings) {
         super(settings);

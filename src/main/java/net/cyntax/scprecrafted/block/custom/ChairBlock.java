@@ -1,7 +1,6 @@
 package net.cyntax.scprecrafted.block.custom;
 
 import com.mojang.serialization.MapCodec;
-import it.unimi.dsi.fastutil.ints.Int2BooleanFunction;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
@@ -29,7 +28,7 @@ public class ChairBlock extends HorizontalFacingBlock {
                     Block.createCuboidShape(4.0, 10.0, 4.0, 5.0, 11.0, 6.0),
                     Block.createCuboidShape(4.0, 10.0, 10.0, 5.0, 11.0, 12.0),
                     Block.createCuboidShape(4.0, 23.0, 3.0, 5.0, 24.0, 13.0))
-            .reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
+            .reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     private static final VoxelShape SHAPEW = Stream.of(
                     Block.createCuboidShape(1.0, 0.0, 3.0, 2.0, 9.0, 4.0),
@@ -41,7 +40,7 @@ public class ChairBlock extends HorizontalFacingBlock {
                     Block.createCuboidShape(11.0, 10.0, 4.0, 12.0, 11.0, 6.0),
                     Block.createCuboidShape(11.0, 10.0, 10.0, 12.0, 11.0, 12.0),
                     Block.createCuboidShape(11.0, 23.0, 3.0, 12.0, 24.0, 13.0))
-            .reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
+            .reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
 
     private static final VoxelShape SHAPES = Stream.of(
@@ -54,7 +53,7 @@ public class ChairBlock extends HorizontalFacingBlock {
                     Block.createCuboidShape(4.0, 10.0, 4.0, 6.0, 11.0, 5.0),
                     Block.createCuboidShape(10.0, 10.0, 4.0, 12.0, 11.0, 5.0),
                     Block.createCuboidShape(3.0, 23.0, 4.0, 13.0, 24.0, 5.0))
-            .reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
+            .reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     private static final VoxelShape SHAPEN = Stream.of(
                     Block.createCuboidShape(3.0, 0.0, 1.0, 4.0, 9.0, 2.0),
@@ -66,7 +65,7 @@ public class ChairBlock extends HorizontalFacingBlock {
                     Block.createCuboidShape(4.0, 10.0, 11.0, 6.0, 11.0, 12.0),
                     Block.createCuboidShape(10.0, 10.0, 11.0, 12.0, 11.0, 12.0),
                     Block.createCuboidShape(3.0, 23.0, 11.0, 13.0, 24.0, 12.0))
-            .reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
+            .reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     public ChairBlock(Settings settings) {
         super(settings);
@@ -74,18 +73,13 @@ public class ChairBlock extends HorizontalFacingBlock {
 
     @Override
     protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        switch (state.get(FACING)) {
-            case NORTH:
-                return SHAPEN;
-            case SOUTH:
-                return SHAPES;
-            case EAST:
-                return SHAPEE;
-            case WEST:
-                return SHAPEW;
-            default:
-                return SHAPEW;
-        }
+        return switch (state.get(FACING)) {
+            case NORTH -> SHAPEN;
+            case SOUTH -> SHAPES;
+            case EAST -> SHAPEE;
+            case WEST -> SHAPEW;
+            default -> SHAPEW;
+        };
     }
 
     @Override
