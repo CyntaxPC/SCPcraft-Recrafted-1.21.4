@@ -3,7 +3,7 @@ package net.cyntax.scprecrafted.datagen;
 import net.cyntax.scprecrafted.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.block.Block;
+
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -51,13 +51,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MOSSY_POLISHED_MARBLE_BRICKS_STAIRS)
                 .add(ModBlocks.POLISHED_MARBLE_BRICKS_WALL)
                 .add(ModBlocks.CRACKED_POLISHED_MARBLE_BRICKS_WALL)
-                .add(ModBlocks.MOSSY_POLISHED_MARBLE_BRICKS_WALL);
+                .add(ModBlocks.MOSSY_POLISHED_MARBLE_BRICKS_WALL)
+                .add(ModBlocks.REINFORCED_GLASS)
+                .add(ModBlocks.REINFORCED_GLASS_PANE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.BLADEWOOD_LOG)
                 .add(ModBlocks.BLADEWOOD_WOOD)
                 .add(ModBlocks.STRIPPED_BLADEWOOD_LOG)
                 .add(ModBlocks.STRIPPED_BLADEWOOD_WOOD)
+                .add(ModBlocks.BLADEWOOD_CHAIR)
+                .add(ModBlocks.BLADEWOOD_TABLE)
+                .add(ModBlocks.BLADEWOOD_SLAB)
+                .add(ModBlocks.BLADEWOOD_STAIRS)
+                .add(ModBlocks.BLADEWOOD_FENCE)
+                .add(ModBlocks.BLADEWOOD_BUTTON)
+                .add(ModBlocks.BLADEWOOD_PRESSURE_PLATE)
+                .add(ModBlocks.BLADEWOOD_DOOR)
+                .add(ModBlocks.BLADEWOOD_TRAPDOOR)
+                .add(ModBlocks.BLADEWOOD_FENCE_GATE)
                 .add(ModBlocks.BLADEWOOD_PLANKS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
@@ -67,12 +79,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLADEWOOD_WOOD)
                 .add(ModBlocks.STRIPPED_BLADEWOOD_LOG)
                 .add(ModBlocks.STRIPPED_BLADEWOOD_WOOD)
+                .add(ModBlocks.BLADEWOOD_CHAIR)
+                .add(ModBlocks.BLADEWOOD_TABLE)
+                .add(ModBlocks.BLADEWOOD_SLAB)
+                .add(ModBlocks.BLADEWOOD_STAIRS)
+                .add(ModBlocks.BLADEWOOD_FENCE)
+                .add(ModBlocks.BLADEWOOD_BUTTON)
+                .add(ModBlocks.BLADEWOOD_PRESSURE_PLATE)
+                .add(ModBlocks.BLADEWOOD_DOOR)
+                .add(ModBlocks.BLADEWOOD_TRAPDOOR)
+                .add(ModBlocks.BLADEWOOD_FENCE_GATE)
                 .add(ModBlocks.BLADEWOOD_PLANKS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PLATINUM_BLOCK)
                 .add(ModBlocks.DEEPSLATE_PLATINUM_ORE)
-                .add(ModBlocks.BLISTER_STEEL_BLOCK);
+                .add(ModBlocks.BLISTER_STEEL_BLOCK)
+                .add(ModBlocks.REINFORCED_GLASS)
+                .add(ModBlocks.REINFORCED_GLASS_PANE);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.BLADEWOOD_LOG)

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "item.scprecrafted.eye_spiders_music_disc.desc"
+  },
+  "length_in_seconds": 178.0,
+  "sound_event": "scprecrafted:eye_spiders_song"
+}

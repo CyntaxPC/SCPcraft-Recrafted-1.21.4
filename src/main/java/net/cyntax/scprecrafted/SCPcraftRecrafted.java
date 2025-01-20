@@ -3,13 +3,12 @@ package net.cyntax.scprecrafted;
 import net.cyntax.scprecrafted.block.ModBlocks;
 import net.cyntax.scprecrafted.item.ModItemGroups;
 import net.cyntax.scprecrafted.item.ModItems;
-import net.cyntax.scprecrafted.world.gen.ModOreGeneration;
+import net.cyntax.scprecrafted.sound.ModSounds;
 import net.cyntax.scprecrafted.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
-import net.minecraft.block.FireBlock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,10 +19,12 @@ public class SCPcraftRecrafted implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		ModOreGeneration.generateOres();
+		ModWorldGeneration.generateModWorldGen();
+		ModSounds.registerSounds();
 
 		StrippableBlockRegistry.register(ModBlocks.BLADEWOOD_LOG, ModBlocks.STRIPPED_BLADEWOOD_LOG);
 		StrippableBlockRegistry.register(ModBlocks.BLADEWOOD_WOOD, ModBlocks.STRIPPED_BLADEWOOD_WOOD);
