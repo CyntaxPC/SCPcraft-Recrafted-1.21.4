@@ -1,6 +1,8 @@
 package net.cyntax.scprecrafted.datagen;
 
+import net.cyntax.scprecrafted.SCPcraftRecrafted;
 import net.cyntax.scprecrafted.block.ModBlocks;
+import net.cyntax.scprecrafted.item.ModEquipmentAssetKeys;
 import net.cyntax.scprecrafted.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -8,6 +10,9 @@ import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
 import net.minecraft.client.data.TexturedModel;
+import net.minecraft.client.render.entity.equipment.EquipmentModel;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -144,6 +149,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.REWIND_MAN_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.SONG_OF_GENESIS_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.EYE_SPIDERS_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIVING_ROOM_MUSIC_DISC, Models.GENERATED);
 
         itemModelGenerator.register(ModBlocks.BLADEWOOD_SAPLING.asItem(), Models.GENERATED);
 
@@ -171,6 +177,43 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModBlocks.WARPED_TABLE.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.CRIMSON_TABLE.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.GLASS_TABLE.asItem(), Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.PLATINUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRIDIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRIDIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRIDIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRIDIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRIDIUM_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLADEWOOD_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLADEWOOD_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLADEWOOD_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLADEWOOD_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLADEWOOD_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(ModItems.PLATINUM_HELMET, ModEquipmentAssetKeys.PLATINUM, "helmet", false);
+        EquipmentModel.builder().addHumanoidLayers(Identifier.of(SCPcraftRecrafted.MOD_ID, "platinum")).build();
+        itemModelGenerator.registerArmor(ModItems.PLATINUM_CHESTPLATE, ModEquipmentAssetKeys.PLATINUM, "chestplate", false);
+        EquipmentModel.builder().addHumanoidLayers(Identifier.of(SCPcraftRecrafted.MOD_ID, "platinum")).build();
+        itemModelGenerator.registerArmor(ModItems.PLATINUM_LEGGINGS, ModEquipmentAssetKeys.PLATINUM, "leggings", false);
+        EquipmentModel.builder().addHumanoidLayers(Identifier.of(SCPcraftRecrafted.MOD_ID, "platinum")).build();
+        itemModelGenerator.registerArmor(ModItems.PLATINUM_BOOTS, ModEquipmentAssetKeys.PLATINUM, "boots", false);
+        EquipmentModel.builder().addHumanoidLayers(Identifier.of(SCPcraftRecrafted.MOD_ID, "platinum")).build();
+
+        itemModelGenerator.registerArmor(ModItems.IRIDIUM_HELMET, ModEquipmentAssetKeys.IRIDIUM, "helmet", false);
+        EquipmentModel.builder().addHumanoidLayers(Identifier.of(SCPcraftRecrafted.MOD_ID, "iridium")).build();
+        itemModelGenerator.registerArmor(ModItems.IRIDIUM_CHESTPLATE, ModEquipmentAssetKeys.IRIDIUM, "chestplate", false);
+        EquipmentModel.builder().addHumanoidLayers(Identifier.of(SCPcraftRecrafted.MOD_ID, "iridium")).build();
+        itemModelGenerator.registerArmor(ModItems.IRIDIUM_LEGGINGS, ModEquipmentAssetKeys.IRIDIUM, "leggings", false);
+        EquipmentModel.builder().addHumanoidLayers(Identifier.of(SCPcraftRecrafted.MOD_ID, "iridium")).build();
+        itemModelGenerator.registerArmor(ModItems.IRIDIUM_BOOTS, ModEquipmentAssetKeys.IRIDIUM, "boots", false);
+        EquipmentModel.builder().addHumanoidLayers(Identifier.of(SCPcraftRecrafted.MOD_ID, "iridium")).build();
+
+
+
 
 
     }

@@ -71,6 +71,10 @@ public class ModSounds {
     public static final RegistryKey<JukeboxSong> EYE_SPIDERS_SONG_KEY =
             RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(SCPcraftRecrafted.MOD_ID, "eye_spiders_song"));
 
+    public static final SoundEvent LIVING_ROOM_SONG = registerSoundEvent("living_room_song");
+    public static final RegistryKey<JukeboxSong> LIVING_ROOM_SONG_KEY =
+            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(SCPcraftRecrafted.MOD_ID, "living_room_song"));
+
 
 
 

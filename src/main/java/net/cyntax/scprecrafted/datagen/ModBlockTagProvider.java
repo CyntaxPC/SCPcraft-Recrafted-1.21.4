@@ -1,6 +1,7 @@
 package net.cyntax.scprecrafted.datagen;
 
 import net.cyntax.scprecrafted.block.ModBlocks;
+import net.cyntax.scprecrafted.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 
@@ -121,6 +122,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_MARBLE_BRICKS_WALL)
                 .add(ModBlocks.CRACKED_POLISHED_MARBLE_BRICKS_WALL)
                 .add(ModBlocks.MOSSY_POLISHED_MARBLE_BRICKS_WALL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PLATINUM_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_IRIDIUM_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BLADEWOOD_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
 
     }
 }

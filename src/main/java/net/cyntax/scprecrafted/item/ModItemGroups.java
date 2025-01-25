@@ -123,10 +123,33 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_PLATINUM);
                         entries.add(ModItems.PLATINUM_INGOT);
+                        entries.add(ModItems.PLATINUM_SWORD);
+                        entries.add(ModItems.PLATINUM_PICKAXE);
+                        entries.add(ModItems.PLATINUM_SHOVEL);
+                        entries.add(ModItems.PLATINUM_AXE);
+                        entries.add(ModItems.PLATINUM_HOE);
+                        entries.add(ModItems.PLATINUM_HELMET);
+                        entries.add(ModItems.PLATINUM_CHESTPLATE);
+                        entries.add(ModItems.PLATINUM_LEGGINGS);
+                        entries.add(ModItems.PLATINUM_BOOTS);
                         entries.add(ModItems.RAW_IRIDIUM);
                         entries.add(ModItems.IRIDIUM_INGOT);
+                        entries.add(ModItems.IRIDIUM_SWORD);
+                        entries.add(ModItems.IRIDIUM_PICKAXE);
+                        entries.add(ModItems.IRIDIUM_SHOVEL);
+                        entries.add(ModItems.IRIDIUM_AXE);
+                        entries.add(ModItems.IRIDIUM_HOE);
+                        entries.add(ModItems.IRIDIUM_HELMET);
+                        entries.add(ModItems.IRIDIUM_CHESTPLATE);
+                        entries.add(ModItems.IRIDIUM_LEGGINGS);
+                        entries.add(ModItems.IRIDIUM_BOOTS);
                         entries.add(ModItems.IRON_BLAST);
                         entries.add(ModItems.BLISTER_STEEL_INGOT);
+                        entries.add(ModItems.BLADEWOOD_SWORD);
+                        entries.add(ModItems.BLADEWOOD_PICKAXE);
+                        entries.add(ModItems.BLADEWOOD_SHOVEL);
+                        entries.add(ModItems.BLADEWOOD_AXE);
+                        entries.add(ModItems.BLADEWOOD_HOE);
 
 
 
@@ -145,6 +168,7 @@ public class ModItemGroups {
                         entries.add(ModItems.REWIND_MAN_MUSIC_DISC);
                         entries.add(ModItems.SONG_OF_GENESIS_MUSIC_DISC);
                         entries.add(ModItems.EYE_SPIDERS_MUSIC_DISC);
+                        entries.add(ModItems.LIVING_ROOM_MUSIC_DISC);
 
 
                     }).build());

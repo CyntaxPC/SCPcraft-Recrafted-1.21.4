@@ -1,6 +1,7 @@
 package net.cyntax.scprecrafted;
 
 import net.cyntax.scprecrafted.block.ModBlocks;
+import net.cyntax.scprecrafted.entity.ModEntities;
 import net.cyntax.scprecrafted.item.ModItemGroups;
 import net.cyntax.scprecrafted.item.ModItems;
 import net.cyntax.scprecrafted.sound.ModSounds;
@@ -25,6 +26,7 @@ public class SCPcraftRecrafted implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModWorldGeneration.generateModWorldGen();
 		ModSounds.registerSounds();
+		ModEntities.registerModEntities();
 
 		StrippableBlockRegistry.register(ModBlocks.BLADEWOOD_LOG, ModBlocks.STRIPPED_BLADEWOOD_LOG);
 		StrippableBlockRegistry.register(ModBlocks.BLADEWOOD_WOOD, ModBlocks.STRIPPED_BLADEWOOD_WOOD);

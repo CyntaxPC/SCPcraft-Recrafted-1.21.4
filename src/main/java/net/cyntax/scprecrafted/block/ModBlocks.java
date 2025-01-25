@@ -443,7 +443,7 @@ public class ModBlocks {
     }
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(SCPcraftRecrafted.MOD_ID, name),
-                new BlockItem(block, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SCPcraftRecrafted.MOD_ID, name)))));
+                new BlockItem(block, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SCPcraftRecrafted.MOD_ID, name))).useBlockPrefixedTranslationKey()));
     }
     public static void registerModBlocks() {
         SCPcraftRecrafted.LOGGER.info("Registering modded blocks for " + SCPcraftRecrafted.MOD_ID);

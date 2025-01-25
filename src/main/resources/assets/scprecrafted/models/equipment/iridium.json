@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "scprecrafted:iridium"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "scprecrafted:iridium"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "scprecrafted:iridium"
+      }
+    ]
+  }
+}

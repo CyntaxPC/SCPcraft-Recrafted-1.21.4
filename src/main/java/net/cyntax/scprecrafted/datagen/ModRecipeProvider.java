@@ -500,6 +500,148 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
+                createShaped(RecipeCategory.MISC, ModItems.PLATINUM_SWORD, 1)
+                        .pattern(" I ")
+                        .pattern(" I ")
+                        .pattern(" S ")
+                        .input('I', ModItems.PLATINUM_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.PLATINUM_PICKAXE, 1)
+                        .pattern("III")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('I', ModItems.PLATINUM_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.PLATINUM_SHOVEL, 1)
+                        .pattern(" I ")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('I', ModItems.PLATINUM_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.PLATINUM_AXE, 1)
+                        .pattern(" II")
+                        .pattern(" SI")
+                        .pattern(" S ")
+                        .input('I', ModItems.PLATINUM_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.PLATINUM_HOE, 1)
+                        .pattern(" II")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('I', ModItems.PLATINUM_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.IRIDIUM_SWORD, 1)
+                        .pattern(" I ")
+                        .pattern(" I ")
+                        .pattern(" S ")
+                        .input('I', ModItems.IRIDIUM_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.IRIDIUM_INGOT), conditionsFromItem(ModItems.IRIDIUM_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.IRIDIUM_PICKAXE, 1)
+                        .pattern("III")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('I', ModItems.IRIDIUM_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.IRIDIUM_INGOT), conditionsFromItem(ModItems.IRIDIUM_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.IRIDIUM_SHOVEL, 1)
+                        .pattern(" I ")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('I', ModItems.IRIDIUM_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.IRIDIUM_INGOT), conditionsFromItem(ModItems.IRIDIUM_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.IRIDIUM_AXE, 1)
+                        .pattern(" II")
+                        .pattern(" SI")
+                        .pattern(" S ")
+                        .input('I', ModItems.IRIDIUM_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.IRIDIUM_INGOT), conditionsFromItem(ModItems.IRIDIUM_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.IRIDIUM_HOE, 1)
+                        .pattern(" II")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('I', ModItems.IRIDIUM_INGOT)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.IRIDIUM_INGOT), conditionsFromItem(ModItems.IRIDIUM_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.BLADEWOOD_SWORD, 1)
+                        .pattern(" I ")
+                        .pattern(" I ")
+                        .pattern(" S ")
+                        .input('I', ModBlocks.BLADEWOOD_PLANKS)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModBlocks.BLADEWOOD_PLANKS), conditionsFromItem(ModBlocks.BLADEWOOD_PLANKS))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.BLADEWOOD_PICKAXE, 1)
+                        .pattern("III")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('I', ModBlocks.BLADEWOOD_PLANKS)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModBlocks.BLADEWOOD_PLANKS), conditionsFromItem(ModBlocks.BLADEWOOD_PLANKS))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.BLADEWOOD_SHOVEL, 1)
+                        .pattern(" I ")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('I', ModBlocks.BLADEWOOD_PLANKS)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModBlocks.BLADEWOOD_PLANKS), conditionsFromItem(ModBlocks.BLADEWOOD_PLANKS))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.BLADEWOOD_AXE, 1)
+                        .pattern(" II")
+                        .pattern(" SI")
+                        .pattern(" S ")
+                        .input('I', ModBlocks.BLADEWOOD_PLANKS)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModBlocks.BLADEWOOD_PLANKS), conditionsFromItem(ModBlocks.BLADEWOOD_PLANKS))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.BLADEWOOD_HOE, 1)
+                        .pattern(" II")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('I', ModBlocks.BLADEWOOD_PLANKS)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModBlocks.BLADEWOOD_PLANKS), conditionsFromItem(ModBlocks.BLADEWOOD_PLANKS))
+                        .offerTo(exporter);
+
+
+
+
+
+
+
+
 
 
 

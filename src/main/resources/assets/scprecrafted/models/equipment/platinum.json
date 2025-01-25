@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "scprecrafted:platinum"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "scprecrafted:platinum"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "scprecrafted:platinum"
+      }
+    ]
+  }
+}
